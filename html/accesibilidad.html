@@ -1,11 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesibilidad Web — WCAG</title>
+    <meta name="description"
+        content="Investigación 3: Accesibilidad Web. Definición, importancia ética y legal, y principios WCAG con ejemplos prácticos." />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="canonical" href="https://ehuang04.github.io/invest-corta_ErinHuang/html/accesibilidad.html" />
+
+    <!-- social -->
+    <meta property="og:title" content="Investigación 3: Accesibilidad Web — WCAG" />
+    <meta property="og:description"
+        content="Qué es la accesibilidad, su importancia y los 4 principios WCAG con ejemplos." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ehuang04.github.io/invest-corta_ErinHuang/html/accesibilidad.html" />
+    <meta property="og:image"
+        content="https://ehuang04.github.io/invest-corta_ErinHuang/assets/preview-accesibilidad.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+
 </head>
+
 <body>
-    
+    <a href="#contenido" class="visually-hidden-focusable">Saltar al contenido principal</a>
+
+    <header role="banner">
+        <h1>Investigación Corta</h1>
+    </header>
+
+    <nav aria-label="Principal" role="navigation">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="seo.html">SEO y Rendimiento</a></li>
+            <li><a href="usabilidad.html">Usabilidad Web y DCU</a></li>
+            <li><a href="accesibilidad.html" aria-current="page">Accesibilidad Web</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido" role="main">
+        <section class="section" aria-labelledby="t-acces">
+            <h2 id="t-acces">Investigación 3: Accesibilidad Web</h2>
+
+            <article aria-labelledby="que-es">
+                <h3 id="que-es">¿Qué es la Accesibilidad Web?</h3>
+                <p>
+                    La <strong>accesibilidad web</strong> se refiere al diseño y desarrollo de sitios y aplicaciones que
+                    pueden ser utilizados por todas las personas, incluidas aquellas con discapacidades visuales,
+                    auditivas, motoras o cognitivas (W3C, 2018).
+                </p>
+                <p>
+                    Su objetivo es eliminar barreras y garantizar contenido <em>perceptible, operable, comprensible y
+                        robusto</em>. Para el W3C, la accesibilidad es esencial dentro del diseño inclusivo y la
+                    experiencia de usuario universal.
+                </p>
+            </article>
+            <br>
+            <br>
+            <article aria-labelledby="importancia">
+                <h3 id="importancia">Importancia: ética, legal y calidad del código</h3>
+                <p>
+                    Éticamente, promover la accesibilidad es un acto de <strong>equidad digital</strong>: reconoce el
+                    derecho de todas las personas a acceder a la información y participar en la sociedad sin
+                    discriminación (Berners-Lee, 2019).
+                </p>
+                <p>
+                    Legalmente, múltiples países exigen estándares como <strong>WCAG 2.1</strong>, la <strong>Sección
+                        508</strong> (EE. UU.) o el <strong>Real Decreto 1112/2018</strong> (España), para garantizar
+                    servicios digitales inclusivos.
+                </p>
+                <p>
+                    Además, la accesibilidad mejora la <strong>calidad del código</strong>: etiquetas semánticas,
+                    estructura ordenada, textos alternativos y compatibilidad con tecnologías de asistencia. Un sitio
+                    accesible beneficia también a personas mayores, usuarios móviles y a los motores de búsqueda (W3C,
+                    2018).
+                </p>
+            </article>
+            <br>
+            <br>
+            <article aria-labelledby="wcag">
+                <h3 id="wcag">Principios de las WCAG (con ejemplo de código)</h3>
+
+                <!-- 1. Perceptible -->
+                <section aria-labelledby="p1">
+                    <h4 id="p1">1) Perceptible</h4>
+                    <p>El contenido debe poder percibirse por distintos sentidos.</p>
+                    <pre><code>&lt;img src="../assets/helado_koko.jpg"
+    alt="Vaso de batido de fresa con logotipo de KOKO"
+    loading="lazy" width="640" height="360"&gt;</code></pre>
+                    <p>El atributo <code>alt</code> describe la imagen para lectores de pantalla.</p>
+                </section>
+
+                <!-- 2. Operable -->
+                <section aria-labelledby="p2">
+                    <h4 id="p2">2) Operable</h4>
+                    <p>La interfaz debe poder usarse con teclado, ratón, voz, etc.</p>
+                    <pre><code>&lt;a href="#menu" tabindex="0"&gt;Ir al menú principal&lt;/a&gt;</code></pre>
+                    <p><code>tabindex="0"</code> garantiza el enfoque con <span class="kbd">Tab</span> y activación con
+                        <span class="kbd">Enter</span>.
+                    </p>
+                </section>
+
+                <!-- 3. Comprensible -->
+                <section aria-labelledby="p3">
+                    <h4 id="p3">3) Comprensible</h4>
+                    <p>La información y la operación deben ser fáciles de entender.</p>
+                    <pre><code>&lt;label for="correo"&gt;Correo electrónico:&lt;/label&gt;
+                            &lt;input type="email" id="correo" name="correo"
+            placeholder="usuario@ejemplo.com" required
+        aria-describedby="ayuda-correo"&gt;
+&lt;small id="ayuda-correo"&gt;Usa un formato válido, p. ej. nombre@dominio.com&lt;/small&gt;</code></pre>
+                    <p>Etiqueta asociada + ayuda contextual mejoran la comprensión.</p>
+                </section>
+
+                <!-- 4. Robusto -->
+                <section aria-labelledby="p4">
+                    <h4 id="p4">4) Robusto</h4>
+                    <p>El contenido debe ser interpretable por distintos navegadores y tecnologías de asistencia.</p>
+                    <pre><code>&lt;header role="banner"&gt;
+                &lt;h1&gt;Tienda KOKO&lt;/h1&gt;
+                &lt;/header&gt;
+                &lt;main role="main"&gt;
+                &lt;article&gt;
+    &lt;h2&gt;Nuevas bebidas&lt;/h2&gt;
+    &lt;p&gt;Descubre los sabores de temporada con tapioca artesanal.&lt;/p&gt;
+            &lt;/article&gt;
+&lt;/main&gt;</code></pre>
+                    <p>Etiquetas semánticas y <code>role</code> ARIA refuerzan compatibilidad y consistencia.</p>
+                </section>
+            </article>
+            <br>
+            <br>
+            <article aria-labelledby="practico">
+                <h3 id="practico">Ejemplo práctico (implementado en esta página)</h3>
+                <ul>
+                    <li><strong>Navegación con teclado:</strong> todos los enlaces son alcanzables con <span
+                            class="kbd">Tab</span> y activables con <span class="kbd">Enter</span>; se incluye “Saltar
+                        al contenido”. El estilo <code>:focus</code> da foco visible.</li>
+                    <li><strong>HTML semántico:</strong> estructura con <code>header</code>, <code>nav</code>,
+                        <code>main</code>, <code>section</code>, <code>article</code> y encabezados jerárquicos.
+                    </li>
+                    <li><strong>WAI-ARIA:</strong> se usan <code>role</code> y <code>aria-*</code> (por ejemplo
+                        <code>aria-label</code>, <code>aria-describedby</code>) cuando aporta claridad a la
+                        accesibilidad.
+                    </li>
+                </ul>
+            </article>
+
+            <article aria-labelledby="refs">
+                <h3 id="refs">Referencias (APA 7ª edición)</h3>
+                <ol>
+                    <li>Berners-Lee, T. (2019). <em>Web Accessibility and the Social Dimension of the Web.</em> World
+                        Wide Web Foundation.</li>
+                    <li>W3C. (2018). <em>Web Content Accessibility Guidelines (WCAG) 2.1.</em> WAI. Recuperado de <a
+                            href="https://www.w3.org/TR/WCAG21/" target="_blank"
+                            rel="noopener">https://www.w3.org/TR/WCAG21/</a></li>
+                    <li>WAI. (2021). <em>Introduction to Web Accessibility.</em> W3C. Recuperado de <a
+                            href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" target="_blank"
+                            rel="noopener">https://www.w3.org/WAI/fundamentals/accessibility-intro/</a></li>
+                </ol>
+            </article>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        © 2025 Universidad Técnica Nacional — Erin Huang
+    </footer>
+
+    <!-- Mejora: al usar el enlace de salto, mueve el foco al contenido -->
+    <script>
+        const skip = document.querySelector('a[href="#contenido"]');
+        skip && skip.addEventListener('click', e => {
+            const main = document.getElementById('contenido');
+            if (main) { main.setAttribute('tabindex', '-1'); main.focus(); }
+        });
+    </script>
 </body>
+
 </html>

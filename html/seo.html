@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEO y Rendimiento</title>
+    <meta name="description" content="Investigación corta sobre SEO" />
+
     <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ehuang04.github.io/invest-corta_ErinHuang/html/seo.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Investigación 1: SEO y Rendimiento" />
+    <meta property="og:description"
+        content="Definición de SEO, velocidad de carga, SEO técnico, Open Graph y Twitter Cards." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://ehuang04.github.io/invest-corta_ErinHuang/html/seo.html" />
+    <meta property="og:image" content="https://ehuang04.github.io/invest-corta_ErinHuang/assets/ejemplo-seo.png" />
+    <meta property="og:locale" content="es_CR" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Investigación 1: SEO y Rendimiento" />
+    <meta name="twitter:description"
+        content="Definición de SEO, velocidad de carga, SEO técnico y etiquetas sociales." />
+    <meta name="twitter:image" content="https://ehuang04.github.io/invest-corta_ErinHuang/assets/ejemplo-seo.png" />
+
+    <!-- Datos estructurados (Schema.org Article) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Investigación 1: SEO y Rendimiento",
+        "description": "Definición de SEO, velocidad de carga (Core Web Vitals), SEO técnico, Open Graph y Twitter Cards.",
+        "inLanguage": "es-CR",
+        "author": { "@type": "Person", "name": "Erin Stella Huang Lin" },
+        "publisher": { "@type": "Organization", "name": "Universidad Técnica Nacional" },
+        "datePublished": "2025-10-21",
+        "image": "https://ehuang04.github.io/invest-corta_ErinHuang/assets/ejemplo-seo.png",
+        "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ehuang04.github.io/invest-corta_ErinHuang/html/seo.html"}
+    }
+    </script>
+
 </head>
+
 <body>
     <header>
         <h1>Investigación Corta</h1>
@@ -20,15 +62,110 @@
     </nav>
 
     <main>
-        <section class="section">
-            <h2>Optimización para Motores de Búsqueda (SEO) y Rendimiento</h2>
-            
-            
+        <section class="section" aria-labelledby="titulo-seo">
+            <h2 id="titulo-seo">Optimización para Motores de Búsqueda (SEO) y Rendimiento</h2>
+
+            <article>
+                <h3>¿Qué es el SEO?</h3>
+                <p>
+                    El SEO (<em>Search Engine Optimization</em>) es el proceso de mejorar la visibilidad de una página
+                    web en los resultados orgánicos de los motores de búsqueda mediante optimizaciones técnicas y de
+                    contenido. El objetivo es que los buscadores comprendan e indexen correctamente las páginas para
+                    aumentar las probabilidades de aparecer en posiciones destacadas (Google Developers, 2024).
+                </p>
+                <p>
+                    Este enfoque integra la arquitectura del sitio, el uso de palabras clave y la calidad del contenido.
+                    Una alta visibilidad orgánica incrementa el tráfico, refuerza la confianza de los usuarios y mejora
+                    la reputación digital de la marca.
+                </p>
+            </article>
+
+            <article>
+                <h3>SEO y Velocidad de Carga</h3>
+                <p>
+                    La velocidad de carga es un factor determinante en el rendimiento y posicionamiento. Los usuarios
+                    tienden a abandonar páginas que tardan más de tres segundos, lo que afecta la experiencia (GTmetrix,
+                    2024). Las métricas <strong>Core Web Vitals</strong> —Largest Contentful Paint (LCP), First Input
+                    Delay (FID) y Cumulative Layout Shift (CLS)— evalúan rapidez y estabilidad visual e influyen en el
+                    ranking (Google Developers, 2024).
+                </p>
+                <ul>
+                    <li><strong>Optimiza imágenes:</strong> usa formatos modernos (WebP/AVIF), define
+                        <code>width</code>/<code>height</code>, <code>loading="lazy"</code> y comprime archivos.</li>
+                    <li><strong>Reduce scripts y CSS:</strong> minifica, elimina lo no usado y aplaza lo no crítico.
+                    </li>
+                    <li><strong>Habilita caché/CDN:</strong> define cabeceras de caché y utiliza CDN para contenido
+                        estático.</li>
+                </ul>
+
+                <!-- Ejemplo gráfico con alt + lazy + formatos comprimidos -->
+                <figure>
+                    <picture>
+                        <source srcset="../assets/ejemplo-seo.png" type="image/png" />
+                        <img src="../assets/ejemplo-seo.png"
+                            alt="Comparativa del tiempo de carga antes y después de optimizar imágenes" loading="lazy"
+                            width="600" height="338" />
+                    </picture>
+                    <figcaption>Figura 1. Optimización para Motores de Búsqueda (SEO)</figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>SEO Técnico</h3>
+                <p>
+                    El SEO técnico se centra en la estructura interna del sitio para que los motores de búsqueda
+                    rastreen e interpreten correctamente su contenido.
+                </p>
+                <ul>
+                    <li><strong>Metaetiquetas semánticas:</strong> <code>&lt;title&gt;</code> y
+                        <code>&lt;meta name="description"&gt;</code> describen el tema y resumen de la página.</li>
+                    <li><strong>Datos estructurados:</strong> añaden contexto (productos, reseñas, eventos) y mejoran la
+                        presentación del resultado.</li>
+                    <li><strong>Encabezados jerárquicos:</strong> H1–H3 organizan el contenido para usuarios y
+                        buscadores.</li>
+                    <li><strong>Imágenes accesibles:</strong> usa <code>alt</code> descriptivo y formatos livianos.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Etiquetas Open Graph y Twitter Cards</h3>
+                <p>
+                    Las etiquetas <strong>Open Graph</strong> controlan cómo se muestra un enlace al compartirlo en
+                    redes: título (<code>og:title</code>), descripción (<code>og:description</code>), imagen
+                    (<code>og:image</code>) y URL (<code>og:url</code>). 
+                    <br>
+                    Las <strong>Twitter Cards</strong> ofrecen
+                    vistas previas enriquecidas que incrementan la interacción y el CTR (Twitter Developer, 2024).
+                </p>
+            </article>
+
+            <article>
+                <h3>Referencias (APA 7ª edición)</h3>
+                <ol>
+                    <li>Google Developers. (2024). <em>Search Engine Optimization (SEO) Starter Guide</em>. Recuperado
+                        de
+                        <a href="https://developers.google.com/search/docs/beginner/seo-starter-guide" target="_blank"
+                            rel="noopener">https://developers.google.com/search/docs/beginner/seo-starter-guide</a>
+                    </li>
+                    <li>GTmetrix. (2024). <em>How Page Speed Affects SEO</em>. Recuperado de
+                        <a href="https://gtmetrix.com/blog/how-page-speed-affects-seo/" target="_blank"
+                            rel="noopener">https://gtmetrix.com/blog/how-page-speed-affects-seo/</a>
+                    </li>
+                    <li>Twitter Developer. (2024). <em>Getting Started with Twitter Cards</em>. Recuperado de
+                        <a href="https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards"
+                            target="_blank" rel="noopener">https://developer.twitter.com/...</a>
+                    </li>
+                </ol>
+            </article>
         </section>
+    </main>
+
+    </section>
     </main>
 
     <footer>
         © 2025 Universidad Técnica Nacional — Erin Huang
     </footer>
 </body>
+
 </html>

@@ -1,36 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usabilidad y DCU</title>
-    <link rel="stylesheet" href="../css/estilos.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usabilidad Web y DCU</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
 </head>
 
 <body>
     <header>
         <h1>Investigación Corta</h1>
     </header>
+
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="seo.html">SEO y Rendimiento</a></li>
-            <li><a href="usabilidad.html">Usabilidad Web y DCU</a></li>
+            <li><a href="usabilidad.html" aria-current="page">Usabilidad Web y DCU</a></li>
             <li><a href="accesibilidad.html">Accesibilidad Web</a></li>
         </ul>
     </nav>
 
     <main>
-            <section class="section">   
-                <h2>Usabilidad Web y Diseño Centrado en el Usuario (DCU)</h2>
-            </section> 
+        <section class="section">
+            <h2>Usabilidad Web y Diseño Centrado en el Usuario (DCU)</h2>
+
+            <article>
+                <h3>¿Qué es la Usabilidad?</h3>
+                <p>
+                    La <strong>usabilidad</strong> se define como el grado en que un sistema, producto o servicio puede
+                    ser utilizado por los usuarios para alcanzar objetivos específicos con efectividad, eficiencia y
+                    satisfacción dentro de un contexto determinado. En el diseño web, la usabilidad se relaciona con la
+                    facilidad con la que los visitantes pueden navegar, comprender y utilizar un sitio sin confusión
+                    (Nielsen, 2020).
+                </p>
+            </article>
+            <br>
+            <br>
+            <article>
+                <h3>Importancia de la Usabilidad</h3>
+                <p>
+                    La usabilidad es un factor clave en el éxito de la interacción entre el usuario y el sistema. Sitios
+                    confusos o mal diseñados generan abandono rápido y aumentan la tasa de rebote. Por el contrario, una
+                    interfaz intuitiva mejora la satisfacción y facilita el logro de tareas. Según Nielsen (2020),
+                    invertir en usabilidad incrementa la retención de usuarios y reduce costos de soporte técnico, ya
+                    que los usuarios pueden cumplir sus objetivos sin asistencia adicional.
+                </p>
+            </article>
+            <br>
+            <br>
+
+            <article>
+                <h3>¿Qué es el DCU?</h3>
+                <p>
+                    El <strong>Diseño Centrado en el Usuario (DCU)</strong> es un enfoque que coloca al usuario como eje
+                    principal del proceso de diseño. Las decisiones se toman basadas en las necesidades, limitaciones y
+                    comportamientos reales de los usuarios (Norman, 2013). Este proceso incluye investigación,
+                    prototipos, pruebas de usabilidad y retroalimentación continua.
+                </p>
+                <p>
+                    El DCU no solo busca funcionalidad, sino también accesibilidad, estética y significado. Un diseño
+                    centrado en el usuario mejora la conversión, reduce la frustración y promueve la confianza. Además,
+                    favorece la inclusión al considerar la diversidad de contextos y capacidades.
+                </p>
+            </article>
+            <br>
+            <br>
+            <article>
+                <h3>Principios de Usabilidad (Heurísticas de Jakob Nielsen, 2024)</h3>
+
+                <table border="1" cellpadding="8" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Principio</th>
+                            <th>Descripción</th>
+                            <th>Buena Práctica</th>
+                            <th>Mala Práctica</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. Visibilidad del estado del sistema</td>
+                            <td>El sistema debe mantener informado al usuario sobre lo que ocurre.</td>
+                            <td>Barra de carga o mensajes de “guardando cambios”.</td>
+                            <td>No mostrar progreso al subir un archivo.</td>
+                        </tr>
+                        <tr>
+                            <td>2. Coincidencia entre el sistema y el mundo real</td>
+                            <td>Usar lenguaje y conceptos familiares.</td>
+                            <td>Íconos de “carrito” o “búsqueda”.</td>
+                            <td>Términos técnicos como “instancia” o “commit”.</td>
+                        </tr>
+                        <tr>
+                            <td>3. Control y libertad del usuario</td>
+                            <td>Permitir deshacer acciones o retroceder.</td>
+                            <td>Botón “Atrás” o “Deshacer”.</td>
+                            <td>Acciones irreversibles sin confirmación.</td>
+                        </tr>
+                        <tr>
+                            <td>4. Consistencia y estándares</td>
+                            <td>Mantener uniformidad visual y funcional.</td>
+                            <td>Mismo color para botones de acción.</td>
+                            <td>Cambiar posición o color de botones en cada página.</td>
+                        </tr>
+                        <tr>
+                            <td>5. Prevención de errores</td>
+                            <td>Evitar que ocurran errores antes de corregirlos.</td>
+                            <td>Validación de formularios en tiempo real.</td>
+                            <td>Mensajes de error después del envío.</td>
+                        </tr>
+                        <tr>
+                            <td>6. Reconocimiento antes que recuerdo</td>
+                            <td>Facilitar la selección en lugar de la memorización.</td>
+                            <td>Menús desplegables.</td>
+                            <td>Campos que requieren recordar códigos exactos.</td>
+                        </tr>
+                        <tr>
+                            <td>7. Flexibilidad y eficiencia de uso</td>
+                            <td>Permitir atajos o personalización.</td>
+                            <td>Combinaciones de teclas o favoritos.</td>
+                            <td>No ofrecer accesos directos a usuarios frecuentes.</td>
+                        </tr>
+                        <tr>
+                            <td>8. Diseño estético y minimalista</td>
+                            <td>Mostrar solo información esencial.</td>
+                            <td>Interfaz limpia sin sobrecarga visual.</td>
+                            <td>Páginas con exceso de texto o banners.</td>
+                        </tr>
+                        <tr>
+                            <td>9. Ayudar a reconocer y recuperar errores</td>
+                            <td>Mensajes de error claros y constructivos.</td>
+                            <td>“La contraseña debe tener al menos 8 caracteres”.</td>
+                            <td>“Error 404” sin explicación.</td>
+                        </tr>
+                        <tr>
+                            <td>10. Ayuda y documentación</td>
+                            <td>Proporcionar soporte comprensible y accesible.</td>
+                            <td>FAQ o chat de ayuda contextual.</td>
+                            <td>Manual largo y difícil de encontrar.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <br>
+            <br>            
+            <article>
+                <h3>Ejemplo Práctico: Implementación de Principios</h3>
+                <p>
+                    <strong>Consistencia y Estándares:</strong>
+                    En esta página se mantiene la uniformidad visual entre todas las secciones del sitio. El menú
+                    superior, los colores y las fuentes se conservan iguales para que el usuario identifique fácilmente
+                    dónde se encuentra sin confusión visual.
+                </p>
+                <p>
+                    <strong>Flexibilidad y Eficiencia de Uso:</strong>
+                    El diseño permite una navegación directa entre las distintas investigaciones mediante un menú
+                    visible en todo momento. Los enlaces están estructurados para que el usuario pueda moverse entre
+                    páginas sin necesidad de regresar al inicio.
+                </p>
+                <p>
+                    <strong>Estética y Diseño Minimalista:</strong>
+                    Se prioriza un fondo oscuro, tipografía legible y suficiente espacio en blanco. Se evita el exceso
+                    de elementos decorativos, permitiendo que la atención del lector se centre en la información
+                    académica.
+                </p>
+            </article>
+<br>
+<br>
+            <article>
+                <h3>Referencias (APA 7ª edición)</h3>
+                <ol>
+                    <li>Nielsen, J. (2024). <em>10 Usability Heuristics for User Interface Design.</em> Nielsen Norman
+                        Group. Recuperado de <a href="https://www.nngroup.com/articles/ten-usability-heuristics/"
+                            target="_blank">https://www.nngroup.com/articles/ten-usability-heuristics/</a></li>
+                    <li>Nielsen, J. (2020). <em>Usability 101: Introduction to Usability.</em> Nielsen Norman Group.
+                        Recuperado de <a
+                            href="https://www.nngroup.com/articles/usability-101-introduction-to-usability/"
+                            target="_blank">https://www.nngroup.com/articles/usability-101-introduction-to-usability/</a>
+                    </li>
+                    <li>Norman, D. A. (2013). <em>The Design of Everyday Things</em> (Revised and Expanded Edition).
+                        Basic Books.</li>
+                </ol>
+            </article>
+        </section>
     </main>
 
     <footer>
         © 2025 Universidad Técnica Nacional — Erin Huang
     </footer>
-
 </body>
 
 </html>
